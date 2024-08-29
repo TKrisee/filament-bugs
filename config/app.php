@@ -174,7 +174,8 @@ return [
 		// App\Providers\BroadcastServiceProvider::class,
 		App\Providers\EventServiceProvider::class,
 		App\Providers\Filament\AdminPanelProvider::class,
-		App\Providers\RouteServiceProvider::class,
+		AppTest\Providers\Filament\TestPanelProvider::class,
+        App\Providers\RouteServiceProvider::class,
 	],
 
 	/*
@@ -190,6 +191,5 @@ return [
 
 	'aliases' => Facade::defaultAliases()->merge([
 		// 'ExampleClass' => App\Example\ExampleClass::class,
-		'FastExcel' => Rap2hpoutre\FastExcel\Facades\FastExcel::class,
 	])->toArray(),
 ];
