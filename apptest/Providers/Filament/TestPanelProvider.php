@@ -2,6 +2,7 @@
 
 namespace AppTest\Providers\Filament;
 
+use AppTest\Filament\Resources\TagResource;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -29,7 +30,7 @@ class TestPanelProvider extends PanelProvider
             ])
             ->discoverClusters(in: base_path('apptest/Filament/Clusters'), for: 'AppTest\\Filament\\Clusters')
             ->resources([
-                // Uncomment this to register route for cluster resource
+                // FBUG: Uncomment the line below to register route for cluster resource
                 // TagResource::class
             ])
             ->pages([
